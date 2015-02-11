@@ -1,13 +1,14 @@
 html {
   height: 100%;
   width: 100%;
+  margin: auto;
 }
 
 body {
   height: 95%;
   width: 100%;
   font-family: sans-serif;
-  background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+  background-image: url('tree_bark.png');
 }
 
 .main-container {
@@ -31,4 +32,35 @@ p{
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+} 
+
+.messages-container {
+
 }
+
+#timeStamp {
+  text-align: right;
+  padding: 2%;
+  display: flexbox;
+  justify-content: in-between;
+}
+
+
+
+
+/*css animations:
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: purple;
+  transition: all .25s ease;
+}
+
+.header:hover {
+height: 200px;
+background-color: green;
+}
+*/

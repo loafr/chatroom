@@ -7,6 +7,7 @@ app.controller('mainCtrl', function($scope, parseService){
   $scope.getParseData = function() {
     parseService.getData().then(function(response){
       $scope.messages = response.data.results;
+      //$scope.timeStamp = response.data.results.createdAt;
     });
   };
     
@@ -24,8 +25,7 @@ app.controller('mainCtrl', function($scope, parseService){
 
   $scope.postData = function() {
     parseService.postData($scope.message).then(function(response) {
-      //do this after the post
-      console.log(response);
+      $scope.message = '';
     });
   };
 
